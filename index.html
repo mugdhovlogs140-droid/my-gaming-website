@@ -1,35 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Gaming Zone</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<div class="hero">
-  <h1>🎮 MY GAMING ZONE</h1>
-  <p>24/7 Online Gaming Community</p>
-
-  <div class="buttons">
-    <a href="https://discord.gg/YOURINVITE" target="_blank" class="btn discord">💬 Join Discord</a>
-    <button class="btn mc" onclick="copyIP()">⛏️ Copy Minecraft IP</button>
-  </div>
-
-  <span id="copied">✔ IP Copied!</span>
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gaming Website</title>
+  <title>My Gaming Site</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -37,39 +11,61 @@
   <!-- Particles Background -->
   <div id="particles-js"></div>
 
-  <!-- Header -->
-  <header>
-    <h1>🌌 My Cool Gaming Site</h1>
-  </header>
+  <!-- Navbar / Buttons -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#music">Music</a></li>
+      <li><a href="#discord">Discord</a></li>
+      <li><a href="#minecraft">Minecraft</a></li>
+      <li><a href="#updates">Updates</a></li>
+      <li><a href="#videos">Videos</a></li>
+    </ul>
+  </nav>
 
-  <!-- YouTube Section -->
-  <section id="youtube-section">
-    <h2>🎥 Latest Videos</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  <!-- Home Section -->
+  <section id="home">
+    <h1>🌌 Welcome to My Gaming World</h1>
+    <p>Custom domain, 24/7 online, Minecraft + Gaming theme</p>
   </section>
 
-  <!-- IP Copy Box -->
-  <section id="ip-section">
-    <h2>Server IP</h2>
+  <!-- Music Section -->
+  <section id="music">
+    <h2>🎵 Music</h2>
+    <audio controls loop>
+      <source src="music.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio>
+  </section>
+
+  <!-- Discord Section -->
+  <section id="discord">
+    <h2>💬 Discord</h2>
+    <a href="https://discord.gg/YOUR_LINK" target="_blank" class="button">Join Discord</a>
+  </section>
+
+  <!-- Minecraft Section -->
+  <section id="minecraft">
+    <h2>🪓 Minecraft Server</h2>
     <input type="text" value="123.45.67.89" id="ipBox">
     <button id="copyBtn">Copy IP</button>
   </section>
 
-  <!-- Login UI -->
-  <section id="login-section">
-    <div class="login-box">
-      <h2>🔐 Login</h2>
-      <form>
-        <div class="user-box">
-          <input type="text" name="username" required>
-          <label>Username</label>
-        </div>
-        <div class="user-box">
-          <input type="password" name="password" required>
-          <label>Password</label>
-        </div>
-        <a href="#" class="login-btn" id="loginBtn">Login</a>
-      </form>
+  <!-- Updates / Announcement Section -->
+  <section id="updates">
+    <h2>📢 Updates</h2>
+    <ul id="updatesList">
+      <li>Update 1: New server added</li>
+      <li>Update 2: Music added</li>
+    </ul>
+  </section>
+
+  <!-- Video / Media Section -->
+  <section id="videos">
+    <h2>🎥 Videos</h2>
+    <div class="video-container">
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      <!-- Add more videos here -->
     </div>
   </section>
 
