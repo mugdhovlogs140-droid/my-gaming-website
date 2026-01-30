@@ -1,33 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Gaming Zone</title>
-<style>
-body{
-background:black;
-color:white;
-text-align:center;
-font-family:Arial;
-}
-button{
-padding:15px;
-margin:10px;
-font-size:18px;
-background:cyan;
-border:none;
-border-radius:10px;
-cursor:pointer;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>🎮 My Gaming Zone</h1>
-<p>24/7 Online Gaming Website</p>
+<div class="hero">
+  <h1>🎮 MY GAMING ZONE</h1>
+  <p>24/7 Online Gaming Community</p>
 
-<button>Minecraft</button>
-<button>Discord</button>
-<button>Roblox</button>
+  <div class="buttons">
+    <a href="https://discord.gg/YOURINVITE" target="_blank" class="btn discord">💬 Join Discord</a>
+    <button class="btn mc" onclick="copyIP()">⛏️ Copy Minecraft IP</button>
+  </div>
 
+  <span id="copied">✔ IP Copied!</span>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
